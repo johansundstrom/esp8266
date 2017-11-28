@@ -9,7 +9,7 @@ Nyttig info om ESP8266
 
 ## GPIO
 * ESP8266 har 17 GPIO pins (0-16), men endast 11 av dessa är åtkomliga. GPIO 6 - 11 används för att flash'a minnet.
-* Imax från en GPIO är 12mA, Source/Sink, 16*12mA
+* Imax från en GPIO är 12mA driv(Source) ~20mA jord (Sink), 16*12mA
 * Alla I/O anslutningar är interrupt-, pwm-, I2C-, one-wirekompatibla, UTOM D0
 ```
 pinMode(pin, INPUT);           // set pin to input
