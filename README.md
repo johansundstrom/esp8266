@@ -1,4 +1,4 @@
- # WEMOS D1 R2 - ESP8266
+# WEMOS D1 R2 - ESP8266
 
 Nyttig info om ESP8266
 
@@ -23,6 +23,54 @@ pinMode(pin, OUTPUT);          // set pin to output
 ```
 pinMode(pin, INPUT_PULLUP);    // set pin to input
 ```
+
+### Läsa från GPIO
+```value = digitalRead(pin);```     // read the input pin
+```digitalWrite(pin, value);```    // sets the LED to the button's value
+
+### Fördefinierade constanter
+* ```HIGH```     // Digital 1
+* ```LOW```      // DIgiltal 0
+* ```LED_BUILTIN```    // Definierar pin till inbyggd LED
+* ```true```           // motsvarar 1 eller Sant
+* ```false```          // motsvarar 0 eller falskt
+
+### Biblioteket ESP8266WiFi.h
+När vi inkluderar biblioteket ESP8266WiFi.h genom ```#include <ESP8266WiFi.h>``` så får vi med konstanter för varje pinout för varje board enligt i filen pins_arduino.h.
+
+```c
+#ifndef Pins_Arduino_h
+#define Pins_Arduino_h
+
+#include "../generic/common.h"
+
+#define PIN_WIRE_SDA (4)
+#define PIN_WIRE_SCL (5)
+
+static const uint8_t SDA = PIN_WIRE_SDA;
+static const uint8_t SCL = PIN_WIRE_SCL;
+
+static const uint8_t LED_BUILTIN = 2;//new ESP-12E GPIO2
+static const uint8_t BUILTIN_LED = 2;//new ESP-12E GPIO2
+
+static const uint8_t D0   = 3;
+static const uint8_t D1   = 1;
+static const uint8_t D2   = 16;
+static const uint8_t D3   = 5;
+static const uint8_t D4   = 4;
+static const uint8_t D5   = 14;
+static const uint8_t D6   = 12;
+static const uint8_t D7   = 13;
+static const uint8_t D8   = 0;
+static const uint8_t D9   = 2;
+static const uint8_t D10  = 15;
+static const uint8_t D11  = 13;
+static const uint8_t D12  = 12;
+static const uint8_t D13  = 14;
+static const uint8_t D14  = 4;
+static const uint8_t D15  = 5;
+```
+
 
 ## Analog
 * En analog ingång
