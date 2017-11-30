@@ -79,7 +79,7 @@ const int lampa = D1;
 
 void setup() {
    pinMode(knapp, INPUT_PULLUP);    // switch mellan D0 och jord
-   pinMode(lampa, OUTPUT)           // LED mellan D1 och jord med 220 Ohm i serie
+   pinMode(lampa, OUTPUT);          // LED mellan D1 och jord med 220 Ohm i serie
 }
 void loop() {
    if (digitalRead(knapp) == HIGH) {
@@ -87,7 +87,8 @@ void loop() {
       digitalWrite(lampa, HIGH);
   } else {
       // släck LED
-      digitalWrite(lampa, LOW)
+      digitalWrite(lampa, LOW);
+  }
 }
 ```
 
