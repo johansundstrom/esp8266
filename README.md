@@ -47,7 +47,7 @@ pinMode(pin, INPUT_PULLUP);    // set pin to input
 * Hämta in exempelkod från File - Examples - (Examples for WeMos D1 Rs & Mini) ESP8266WiFi - WiFiWebServer
 * Notera att koden kräver redigering på rad 12 och 13.
 * Kompilera/länka och ladda upp till WEMOS D1 R2
-* Från mobilen surfa in på 
+* Från mobilen surfa in på <ip>/get/1
 * Läs kommentaren på rad 1-8 för koppling och användning
 
 ## Blynk.cc
@@ -55,9 +55,9 @@ Fullständig instruktion https://www.blynk.cc/getting-started/
 
 Min instruktion...
 1. Surfa till blynk.cc och skapa konto
-2. Ladda ned, zippa upp och mapparna ```libraries``` och ```tool```
+2. Ladda ned, zippa upp mapparna ```libraries``` och ```tool```
 3. Ovanstående mappar kallar jag för <blynk library>
-placera ```blynk library``` i PC) c:\Users\<user>\Arduino\library\<blynk library> MAC) HD/Users/<user>/Document/Arduino/libraries/<blynk library>
+placera ```blynk library``` i PC) c:\Users\<user>\Arduino\library\<blynk library> eller för MAC) HD/Users/<user>/Document/Arduino/libraries/<blynk library>
 4. Ladda ned blynk-app för iPhone eller Android i telefonen
 5. I Blynk-appen i telefonen Create New Project
 6. Skriv Projektnamn
@@ -67,14 +67,14 @@ placera ```blynk library``` i PC) c:\Users\<user>\Arduino\library\<blynk library
 10. Ett projekt är nu skapat och ett Auth Token sänds automatiskt till det epostkonto som är knutet till Blynkkontot
 11. Klicka på + symbolen och ur Widget Box välj Button
 12. Placera denna på arbetsytan i telefonen genom longpress
-13. Markera utanför knappen men inom knappens yta för att komma in i Buttons Settings
+13. Markera utanför knappen men inom knappens yta för att komma in i Button Settings
 14. Välj Output D9, 0, 1 i de tre rutorna
-15. Välj också att kanppen ska vara en switch
+15. Välj också att knappen ska vara en switch
 16. Gå tillbaks till Projektytan
-17. Gå till Arduino IDE och omstarta
+17. Gå till Arduino IDE och omstarta så att de nya biblioteken läses in 
 18. Under File - Examples - (Examples from custom libraries) finns nu Blynk
 19. Välj där ... - Blynk - BoardsWiFi - ESP8266_Standalone
 20. Redigera rad 41, 45, och 46.
-21. Uppladda
+21. Kompilera/Uppladda
   
 Klart
