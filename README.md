@@ -31,7 +31,7 @@ pinMode(pin, INPUT_PULLUP);    // set pin to input
 ### Fördefinierade constanter
 * ```HIGH```     // Digital 1
 * ```LOW```      // DIgiltal 0
-* ```LED_BUILTIN```    // Definierar pin till inbyggd LED
+* ```LED_BUILTIN```    // Definierar pin för inbyggd LED
 * ```true```           // motsvarar 1 eller Sant
 * ```false```          // motsvarar 0 eller falskt
 
@@ -71,6 +71,25 @@ static const uint8_t D14  = 4;
 static const uint8_t D15  = 5;
 ```
 
+Ett exempel som läser en ingångs värde och skriver det på en utgång kan därför vara
+
+```c
+const int knapp = D0;
+const int lampa = D1;
+
+void setup() {
+   pinMode(knapp, INPUT_PULLUP);    // switch mellan D0 och jord
+   pinMode(lampa, OUTPUT)           // LED mellan D1 och jord med 220 Ohm i serie
+}
+void loop() {
+   if (digitalRead(knapp) == HIGH) {
+      // tänd LED
+      digitalWrite(lampa, HIGH);
+  } else {
+      // släck LED
+      digitalWrite(lampa, LOW)
+}
+```
 
 ## Analog
 * En analog ingång
