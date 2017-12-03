@@ -125,7 +125,7 @@ Min instruktion...
 1. Surfa till blynk.cc och skapa konto
 2. Ladda ned, zippa upp mapparna ```libraries``` och ```tool```
 3. Ovanstående mappar kallar jag för _blynk library_. 
-4. Placera ```blynk library``` i PC) c:\Users\_user_\Arduino\library\_blynk library_ eller för MAC) HD/Users/_user_/Document/Arduino/libraries/_blynk library_
+4. Placera ```blynk library``` i PC) c:\Users\{user}\Arduino\library\{blynk library} eller för MAC) HD/Users/{user}/Document/Arduino/libraries/{blynk library}
 4. Ladda ned blynk-app för iPhone eller Android i telefonen
 5. I Blynk-appen i telefonen Create New Project
 6. Skriv Projektnamn
