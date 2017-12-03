@@ -74,18 +74,18 @@ static const uint8_t D15  = 5;
 Ett exempel som läser en ingångs värde och skriver det på en utgång kan därför vara
 
 ```c
-const int knapp = D0;
-const int lampa = D1;
+const int knapp = 2;
+const int lampa = 3;
 
 void setup() {
-   pinMode(knapp, INPUT_PULLUP);      // switch mellan D0 och jord
-   pinMode(lampa, OUTPUT);            // LED och 220R mellan D1 och jord
+   pinMode(knapp, INPUT_PULLUP);    // switch mellan D0 och jord
+   pinMode(lampa, OUTPUT);          // LED och 220R mellan D1 och jord
 }
 void loop() {
    if (digitalRead(knapp) == HIGH) {
-      digitalWrite(lampa, HIGH);      // tänd LED
+      digitalWrite(lampa, HIGH);    // tänd LED
    } else {
-      digitalWrite(lampa, LOW);       // släck LED
+      digitalWrite(lampa, LOW);     // släck LED
    }
 }
 ```
