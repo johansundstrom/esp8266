@@ -25,8 +25,8 @@ pinMode(pin, INPUT_PULLUP);    // set pin to input
 ```
 
 ### Läsa från GPIO
-```value = digitalRead(pin);```     // read the input pin
-```digitalWrite(pin, value);```    // sets the LED to the button's value
+```value = digitalRead(pin);```   // read the input pin
+```digitalWrite(pin, value);```   // sets the LED to the button's value
 
 ### Fördefinierade constanter
 * ```HIGH```     // Digital 1
@@ -49,6 +49,7 @@ När vi inkluderar biblioteket ESP8266WiFi.h genom ```#include <ESP8266WiFi.h>``
 
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
+
 
 static const uint8_t LED_BUILTIN = 2;//new ESP-12E GPIO2
 static const uint8_t BUILTIN_LED = 2;//new ESP-12E GPIO2
@@ -81,6 +82,7 @@ void setup() {
    pinMode(knapp, INPUT_PULLUP);    // switch mellan D0 och jord
    pinMode(lampa, OUTPUT);          // LED och 220R mellan D1 och jord
 }
+
 void loop() {
    if (digitalRead(knapp) == HIGH) {
       digitalWrite(lampa, HIGH);    // tänd LED
@@ -122,8 +124,8 @@ Fullständig instruktion https://www.blynk.cc/getting-started/
 Min instruktion...
 1. Surfa till blynk.cc och skapa konto
 2. Ladda ned, zippa upp mapparna ```libraries``` och ```tool```
-3. Ovanstående mappar kallar jag för <blynk library>
-placera ```blynk library``` i PC) c:\Users\<user>\Arduino\library\<blynk library> eller för MAC) HD/Users/<user>/Document/Arduino/libraries/<blynk library>
+3. Ovanstående mappar kallar jag för <blynk library>. 
+4. Placera ```blynk library``` i PC) c:\Users\<user>\Arduino\library\<blynk library> eller för MAC) HD/Users/<user>/Document/Arduino/libraries/<blynk library>
 4. Ladda ned blynk-app för iPhone eller Android i telefonen
 5. I Blynk-appen i telefonen Create New Project
 6. Skriv Projektnamn
