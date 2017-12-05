@@ -94,6 +94,22 @@ void loop() {
 }
 ```
 
+## Interupt och GPIO
+* ISP (Interupt Service Routine) 
+```attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);  //recommended```
+Parametrar
+* interrupt: interuptport (int)
+* pin: pinnummer (Arduino Due, Zero, MKR1000 only)
+* ISR: ISR-anrop vid interrupt; functionen kan inte ta emot parametrar och returnerar ingenting
+* mode: definierar var interrupt ska trigga på. Fyra konstanter är fördefinierade:
+1. LOW triggar vid låg (endast låg)
+2. CHANGE triggar vid förändringar (hög-låg och låg-hög)
+3. RISING triggar vid förändring (låg-hög)
+4. FALLING triggar vid förändring (hög-låg)
+The Due, Zero and MKR1000 boards allows also:
+5. HIGH LOW triggar vid hög (endast hög)
+
+
 ## Analog
 * En analog ingång
 * 1024 steg (10 bit)
