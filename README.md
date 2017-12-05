@@ -97,7 +97,9 @@ void loop() {
 ## Interupt och GPIO
 * ISP (Interupt Service Routine) 
 
-```attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);  //recommended```
+```javascript
+attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);  //recommended
+```
 
 Parametrar
 
