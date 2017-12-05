@@ -96,8 +96,11 @@ void loop() {
 
 ## Interupt och GPIO
 * ISP (Interupt Service Routine) 
+
 ```attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);  //recommended```
+
 Parametrar
+
 * interrupt: interuptport (int)
 * pin: pinnummer (Arduino Due, Zero, MKR1000 only)
 * ISR: ISR-anrop vid interrupt; functionen kan inte ta emot parametrar och returnerar ingenting
