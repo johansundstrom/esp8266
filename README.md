@@ -75,8 +75,8 @@ static const uint8_t D15  = 5;
 Ett exempel som läser en ingångs värde och skriver det på en utgång kan därför vara
 
 ```c
-const int knapp = 2;
-const int lampa = 3;
+const int knapp = 2;    // D2 (GPIO16)
+const int lampa = 3;    // D3 (GPIO5)
 
 void setup() {
    pinMode(knapp, INPUT_PULLUP);    // switch mellan D0 och jord
