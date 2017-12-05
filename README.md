@@ -1,6 +1,8 @@
 # WEMOS D1 R2 - ESP8266
 
 Nyttig info om ESP8266
+Läs mer på 
+* https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html
 
 ## Spänning
 * ESP8266 är en µController för 3.3V. Mer än 3.6V kan förstöra den
