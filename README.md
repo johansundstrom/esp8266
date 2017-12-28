@@ -97,8 +97,26 @@ void loop() {
 ## Interupt och GPIO
 * ISP (Interupt Service Routine) 
 
-```javascript
-attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);  //recommended
+```c
+const int knapp = 2;                // D2 (GPIO16)
+const int lampa = 3;                // D3 (GPIO5)
+volatile byte state = LOW;          // variable state
+
+void setup() {
+   pinMode(knapp, INPUT_PULLUP);    // switch mellan D0 och jord
+   pinMode(lampa, OUTPUT);          // LED och 220R mellan D1 och jord
+   
+   // CHANGE - trigg på varje förändring [ LOW | CHANGE  RISING | FALLING | HIGH ]
+   attachInterrupt(digitalPinToInterrupt(knapp), ISR, CHANGE);
+}
+
+void loop() {
+   digitalWrite(lampa, state);
+}
+
+void ISR() {
+   state = !state
+}
 ```
 
 Parametrar
