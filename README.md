@@ -95,7 +95,7 @@ void loop() {
 ```
 
 ## Interupt och GPIO
-* ISP (Interupt Service Routine) 
+* ISR (Interupt Service Routine) 
 
 ```c
 const int knapp = 2;                // D2 (GPIO16)
