@@ -100,7 +100,7 @@ void loop() {
 ```c
 const int knapp = 2;                // D2 (GPIO16)
 const int lampa = 3;                // D3 (GPIO5)
-volatile byte state = LOW;          // variable state
+volatile byte state = LOW;          // initialt state = 0
 
 void setup() {
    pinMode(knapp, INPUT_PULLUP);    // switch mellan D0 och jord
